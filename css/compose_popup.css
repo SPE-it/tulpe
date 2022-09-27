@@ -1,0 +1,54 @@
+html{
+	width: 100%;
+	padding-left: -5%;
+	background-color: #212121;
+}
+
+.tlp-container{
+	padding-left: 1px;
+} 
+.tlp-selection{
+	display:block;
+	padding: 1.5px;
+}
+
+.tlp-badge{
+	display: inline-block;
+	min-width: 10px;
+	min-height: 18px;
+	max-width:10px;
+	max-height:18px;
+	padding: 3px 7px;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 1;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.tlp-red{
+	background-color: #E03C31;
+}
+.tlp-amber{
+	background-color: #F6BE00;
+}
+.tlp-green{
+	background-color: #00B74F;
+}
+.tlp-white{
+	background-color: #5E7975;
+}
+.tlp-none{
+	background-color:white;
+	overflow: hidden;
+}
+.sign-none{
+	color: #E03C31;
+	font-size:32px;
+	position:relative;
+	top:-5px;
+	left:-8px;
+	font-weight: bold;
+}

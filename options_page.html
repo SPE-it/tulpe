@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/options_page.css">
+		<script src="scripts/tlp.js"></script>
+		<script src="scripts/options_page.js"></script>
+    </head>
+    <body>
+		<div class="container">
+			<h3>TLP Message Configuration</h3>
+			<h4>Note: all the messages will be preceded by "Classification: TLP-COLOR - "</h4>
+			<div id="input-container">
+				<div class="input-group">
+					<span id="tlp-red" class="input-group-addon">
+					</span>
+					<input id="input-tlp-red" class="form-control" placeholder="TLP RED Message">
+				</div>
+				<br/>
+				<div class="input-group">
+					<span id="tlp-amber" class="input-group-addon">
+					</span>
+					<input id="input-tlp-amber" class="form-control" placeholder="TLP AMBER Message">
+				</div>
+				<br/>
+				<div class="input-group">
+					<span id="tlp-green" class="input-group-addon">
+					</span>
+					<input id="input-tlp-green" class="form-control" placeholder="TLP GREEN Message">
+				</div>
+				<br/>
+				<div class="input-group">
+					<span id="tlp-white" class="input-group-addon">
+					</span>
+					<input id="input-tlp-white" class="form-control" placeholder="TLP WHITE Message">
+				</div>
+				<br/>
+				<div class="row">
+					<div class="half-width">
+						<span id="conferma" class="hide">Configuration saved</span>
+					</div>
+					<div class="half-width text-right">
+						<span id="scarta" class="btn btn-danger">Discard changes</span>
+						<span id="salva" class="btn btn-success">Save changes</span>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
