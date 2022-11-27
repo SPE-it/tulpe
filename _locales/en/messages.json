@@ -1,0 +1,44 @@
+{
+    "extensionDescription": {
+        "message": "Traffic light protocol extension for Thunderbird, messages are customizable in the option page."
+    },
+    "options_btn_danger": {
+        "message": "Discard changes"
+    },
+    "options_btn_success": {
+        "message": "Save changes"
+    },
+    "options_msg_saved": {
+        "message": "Configuration saved"
+    },
+    "options_strings_title": {
+        "message": "TLP Message Configuration"
+    },
+    "options_strings_note": {
+        "message": "Note: all the messages will be preceded by \"Classification: TLP-COLOR - \""
+    },
+    "classification_prefix": {
+        "message": "Classification: TLP-"
+    },
+    "confirm_title": {
+        "message": "Missing TLP"
+    },
+    "confirm_legend": {
+        "message": "Legend:"
+    },
+    "confirm_select": {
+        "message": "Please select a TLP level"
+    },
+    "tlp_red_message": {
+        "message": "personal for named recipients only"
+    },
+    "tlp_amber_message": {
+        "message": "Organisation: - limited distribution"
+    },
+    "tlp_green_message": {
+        "message": "community wide"
+    },
+    "tlp_white_message": {
+        "message": "unlimited, subject to copyright rules"
+    }
+}

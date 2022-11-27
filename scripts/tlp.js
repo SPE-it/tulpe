@@ -56,7 +56,7 @@ function getSubjectMessage(color, subject){
 function getBodyTextMessage(color, message,tlp_message){
 	// cerco di capire se è presente un messaggio tulpe 
 	// e lo rimuovo solo se a inizio corpo
-	var start = message.indexOf("Classification: TLP-");
+	var start = message.indexOf(browser.i18n.getMessage("classification_prefix"));
 	if(start === 0){
 		var end = message.indexOf(";", start);
 		// +3 per rimuovere anche ;\n
@@ -116,7 +116,7 @@ async function getTlpMessage(color){
 	var message = await browser.storage.local.get().then((res) => {
 		return res[storage_key];
 	});
-	var tlp_message = "Classification: TLP-"+color+" - "+message;
+	var tlp_message = browser.i18n.getMessage("classification_prefix") + color + " - " + message;
 	return tlp_message;
 }
 
@@ -129,17 +129,6 @@ function getStorageKey(color){
 	};
 	
 	return array_keys[color];
-}
-
-function getArrayMessage(){
-	var array_message = {
-		"RED"  : "Classification: TLP-RED - personal for named recipients only",
-		"AMBER": "Classification: TLP-AMBER - Organisation:SPE - limited distribution",
-		"GREEN": "Classification: TLP-GREEN - community wide",
-		"WHITE": "Classification: TLP-WHITE - unlimited, subject to copyright rules"
-	};
-	
-	return array_message;
 }
 
 function getArrayHtmlColors(){

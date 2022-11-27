@@ -55,10 +55,10 @@ async function SetDefaultMessages(){
 	var res = await browser.storage.local.get();
 	if(typeof(res.tlp_red_message) === "undefined"){
 		browser.storage.local.set({
-			tlp_red_message:  "personal for named recipients only",
-			tlp_amber_message:  "Organisation: - limited distribution",
-			tlp_green_message:  "community wide",
-			tlp_white_message:  "unlimited, subject to copyright rules",
+			tlp_red_message:  browser.i18n.getMessage("tlp_red_message"),
+			tlp_amber_message:  browser.i18n.getMessage("tlp_amber_message"),
+			tlp_green_message:  browser.i18n.getMessage("tlp_green_message"),
+			tlp_white_message:  browser.i18n.getMessage("tlp_white_message"),
 		});
 	}
 }

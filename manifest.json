@@ -1,9 +1,10 @@
 {
     "manifest_version": 2,
     "name": "Tulpe",
-    "description": "Traffic light protocol extension for Thunderbird, messages are customizable in the option page.",
-    "version": "1.5",
+    "description": "__MSG_extensionDescription__",
+    "version": "1.6",
     "author": "S.P.E. Sistemi e progetti elettronici",
+	"default_locale": "en",
     "applications": {
         "gecko": {
             "id": "tulpe@spe.it",
