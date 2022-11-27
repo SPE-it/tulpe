@@ -9,6 +9,7 @@ async function getDefaultValues(){
 		document.getElementById("input-tlp-amber").value = res.tlp_amber_message;
 		document.getElementById("input-tlp-green").value = res.tlp_green_message;
 		document.getElementById("input-tlp-white").value = res.tlp_white_message;
+		document.getElementById("input-ask-on-send").checked = !res.dont_ask;
 	});
 }
 
@@ -22,6 +23,7 @@ async function salvaModifiche(){
 		tlp_amber_message:  document.getElementById("input-tlp-amber").value,
 		tlp_green_message:  document.getElementById("input-tlp-green").value,
 		tlp_white_message:  document.getElementById("input-tlp-white").value,
+		dont_ask: document.getElementById("input-ask-on-send").checked,
 	});
 	document.getElementById("conferma").classList = "hide fade-in";
 	setTimeout(function(){
