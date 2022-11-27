@@ -18,7 +18,7 @@ async function writeTLPMessage(tab, color){
 	
 	browser.compose.setComposeDetails(tab.id, {subject: new_subject, [key]: new_message});
 	
-	var used = true;
+	var used = color !== "NONE";
 	var tabId = tab.id;
 	browser.runtime.sendMessage({ tabId,  used});
 }

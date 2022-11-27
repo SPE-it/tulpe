@@ -40,7 +40,11 @@ browser.windows.onRemoved.addListener(async function(windowId){
 
 browser.runtime.onMessage.addListener(function(message){
 	if(message.hasOwnProperty("used")){
-		usedTLP.push(message.tabId);
+		if (message.used) {
+			usedTLP.push(message.tabId);
+		} else {
+			usedTLP = usedTLP.filter(tab => tab !== message.tabId);
+		}
 	} else {
 		let resolve = promiseMap.get(message.tabId);
 		if (!resolve) {
