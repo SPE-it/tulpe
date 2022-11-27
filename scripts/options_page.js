@@ -23,7 +23,7 @@ async function salvaModifiche(){
 		tlp_amber_message:  document.getElementById("input-tlp-amber").value,
 		tlp_green_message:  document.getElementById("input-tlp-green").value,
 		tlp_white_message:  document.getElementById("input-tlp-white").value,
-		dont_ask: document.getElementById("input-ask-on-send").checked,
+		dont_ask: !document.getElementById("input-ask-on-send").checked,
 	});
 	document.getElementById("conferma").classList = "hide fade-in";
 	setTimeout(function(){
