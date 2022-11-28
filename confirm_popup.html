@@ -4,7 +4,8 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="css/confirm_popup.css">
 		<script src="scripts/tlp.js"></script>
 		<script src="scripts/confirm_popup.js"></script>
-		<title>Missing TLP</title>
+		<script src="scripts/localize.js" defer></script>
+		<title data-message="confirm_title"></title>
     </head>
     <body>
 		<div style="width:100%;overflow:hidden;">
@@ -18,12 +19,10 @@
 				<span id="badge-white" class="tlp-badge tlp-white" title="TLP-WHITE"></span>
 				<span id="badge-none" class="tlp-badge tlp-none" title="NO TLP"><span class="sign-none">&#x2716;</span></span>
 			</div>
-			<div class="hint">
-				Please select a TLP level
+			<div class="hint" data-message="confirm_select">
 			</div>
 			<br/>
-			<div class="hint">
-				Legend:
+			<div class="hint" data-message="confirm_legend">
 			</div>
 			<div id="legend">
 				<span id="legend-red" class="legend-text"></span><br/>

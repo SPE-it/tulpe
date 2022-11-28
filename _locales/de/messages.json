@@ -1,0 +1,44 @@
+{
+    "extensionDescription": {
+        "message": "Ampelprotokoll-Erweiterung für Thunderbird, Meldungen sind auf der Optionsseite anpassbar."
+    },
+    "options_btn_danger": {
+        "message": "Änderungen verwerfen"
+    },
+    "options_btn_success": {
+        "message": "Änderungen speichern"
+    },
+    "options_msg_saved": {
+        "message": "Konfiguration gespeichert"
+    },
+    "options_strings_title": {
+        "message": "TLP-Meldungen anpassen"
+    },
+    "options_strings_note": {
+        "message": "Hinweis: Allen Meldungen wird \"Vertraulichkeit: TLP-COLOR - \" vorangestellt."
+    },
+    "classification_prefix": {
+        "message": "Vertraulichkeit: TLP-"
+    },
+    "confirm_title": {
+        "message": "TLP-Stufe fehlt"
+    },
+    "confirm_legend": {
+        "message": "Legende:"
+    },
+    "confirm_select": {
+        "message": "Bitte Vertraulichkeitsstufe auswählen"
+    },
+    "tlp_red_message": {
+        "message": "Persönlich, nur für bekannte Empfänger"
+    },
+    "tlp_amber_message": {
+        "message": "Eingeschränkte interne und organisationsübergreifende Weitergabe"
+    },
+    "tlp_green_message": {
+        "message": "Organisationsübergreifende Weitergabe"
+    },
+    "tlp_white_message": {
+        "message": "Unbegrenzte Weitergabe"
+    }
+}

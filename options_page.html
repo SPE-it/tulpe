@@ -4,11 +4,12 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="css/options_page.css">
 		<script src="scripts/tlp.js"></script>
 		<script src="scripts/options_page.js"></script>
+		<script src="scripts/localize.js" defer></script>
     </head>
     <body>
 		<div class="container">
-			<h3>TLP Message Configuration</h3>
-			<h4>Note: all the messages will be preceded by "Classification: TLP-COLOR - "</h4>
+			<h3 data-message="options_strings_title"></h3>
+			<h4 data-message="options_strings_note"></h4>
 			<div id="input-container">
 				<div class="input-group">
 					<span id="tlp-red" class="input-group-addon">
@@ -36,11 +37,11 @@
 				<br/>
 				<div class="row">
 					<div class="half-width">
-						<span id="conferma" class="hide">Configuration saved</span>
+						<span id="conferma" class="hide" data-message="options_msg_saved"></span>
 					</div>
 					<div class="half-width text-right">
-						<span id="scarta" class="btn btn-danger">Discard changes</span>
-						<span id="salva" class="btn btn-success">Save changes</span>
+						<span id="scarta" class="btn btn-danger" data-message="options_btn_danger"></span>
+						<span id="salva" class="btn btn-success" data-message="options_btn_success"></span>
 					</div>
 				</div>
 			</div>
