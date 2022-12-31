@@ -66,7 +66,8 @@ function getBodyTextMessage(color, message,tlp_message){
 		// aggiungo il ; per capire dove finisce il messaggio
 		var new_message = tlp_message+";\n"+message;
 	} else {
-		var new_message = message;
+		// Work around a bug in setComposeDetails that doesn't accept empty plainTextBody
+		var new_message = message || "\n";
 	}
 	return new_message;
 }
