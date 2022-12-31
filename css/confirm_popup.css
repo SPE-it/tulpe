@@ -1,6 +1,7 @@
 @import "tlp-colors.css";
 
 body{
+	/* This looks ugly, but a darker background is necessary for the official TPL:CLEAR color */
 	background-color:#808080;
 	width:100%;
 	margin:0;

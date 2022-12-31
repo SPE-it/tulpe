@@ -86,8 +86,8 @@ function getBodyHtmlMessage(color, message,tlp_message){
 		// creo il messaggio all'interno di un paragrafo
 		var el = document.createElement("p");
 		el.textContent = tlp_message;
-		el.style.color = array_colors[color];
-		el.style.background = "#000000";
+		el.style["color"] = array_colors[color];
+		el.style["background"] = "#000000";
 		el.style["font-weight"] = "bold";
 		el.className = "tulpe-message";
 		
