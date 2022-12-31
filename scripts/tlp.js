@@ -130,7 +130,8 @@ function getStorageKey(color){
 	return array_keys[color];
 }
 
-function getArrayHtmlColors(){
+function getArrayHtmlColors() {
+	/* Colors as defined in TLP 2.0 https://www.first.org/tlp/ */
 	var array_colors = {
 		"RED"  : "#FF2B2B",
 		"AMBER": "#FFC000",
