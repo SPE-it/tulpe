@@ -59,8 +59,8 @@ function getBodyTextMessage(color, message,tlp_message){
 	var start = message.indexOf(browser.i18n.getMessage("classification_prefix"));
 	if(start === 0){
 		var end = message.indexOf(";", start);
-		// +3 per rimuovere anche ;\n
-		message = message.substr(end+3);
+		// +2 per rimuovere anche ;\n
+		message = message.substr(end+2);
 	}
 	if(color !== "NONE"){
 		// aggiungo il ; per capire dove finisce il messaggio
