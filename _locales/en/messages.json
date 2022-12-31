@@ -11,6 +11,12 @@
     "options_msg_saved": {
         "message": "Configuration saved"
     },
+    "options_title":{
+        "message": "Behavior"
+    },
+    "option_ask_on_send":{
+        "message": "If no TLP classification was set, ask for one on send"
+    },
     "options_strings_title": {
         "message": "TLP Message Configuration"
     },
@@ -33,7 +39,7 @@
         "message": "personal for named recipients only"
     },
     "tlp_amber_message": {
-        "message": "Organisation: - limited distribution"
+        "message": "Organization: - limited distribution"
     },
     "tlp_green_message": {
         "message": "community wide"

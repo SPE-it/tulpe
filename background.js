@@ -4,8 +4,9 @@ let idMap = {};
 
 browser.compose.onBeforeSend.addListener(async function(tab, details){
 	let pos = usedTLP.indexOf(tab.id);
-	if(pos >= 0){
-		usedTLP.splice(pos, 1);
+	const res = await browser.storage.local.get();
+	if (pos >= 0 || res.dont_ask) {
+		usedTLP = usedTLP.filter(t => t !== tab.id);
 		return {cancel: false};
 	}
 	var window_details = {
