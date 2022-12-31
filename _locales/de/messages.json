@@ -15,10 +15,10 @@
         "message": "TLP-Meldungen anpassen"
     },
     "options_strings_note": {
-        "message": "Hinweis: Allen Meldungen wird \"Vertraulichkeit: TLP-COLOR - \" vorangestellt."
+        "message": "Hinweis: Allen Meldungen wird \"Vertraulichkeit: TLP:<FARBE> - \" vorangestellt."
     },
     "classification_prefix": {
-        "message": "Vertraulichkeit: TLP-"
+        "message": "Vertraulichkeit: TLP:"
     },
     "confirm_title": {
         "message": "TLP-Stufe fehlt"

@@ -9,6 +9,6 @@ window.addEventListener("load", async function(){
 	document.getElementById("badge-red").addEventListener('click',function(){writeTLPMessage(tab, "RED")});
 	document.getElementById("badge-amber").addEventListener('click',function(){writeTLPMessage(tab, "AMBER")});
 	document.getElementById("badge-green").addEventListener('click',function(){writeTLPMessage(tab, "GREEN")});
-	document.getElementById("badge-white").addEventListener('click',function(){writeTLPMessage(tab, "WHITE")});
+	document.getElementById("badge-white").addEventListener('click',function(){writeTLPMessage(tab, "CLEAR")});
 	document.getElementById("badge-none").addEventListener('click',function(){writeTLPMessage(tab, "NONE")});
 });
