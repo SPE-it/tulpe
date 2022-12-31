@@ -1,3 +1,5 @@
+@import "tlp-colors.css";
+
 body{
 	width:100%;
 	margin:0;
@@ -69,19 +71,19 @@ body{
 	margin-right:1.5px;
 }
 #tlp-red{
-	background-color: #E03C31;
+	background-color: var(--tlp-red);
 	border-color: #9B2017;
 }
 #tlp-amber{
-	background-color: #F6BE00;
+	background-color: var(--tlp-amber);
 	border-color: #CC9C00;
 }
 #tlp-green{
-	background-color:#00B74F;
+	background-color: var(--tlp-green);
 	border-color: #009942;
 }
 #tlp-white{
-	background-color: #5E7975;
+	background-color: var(--tlp-white);
 	border-color: #4E6561;
 }
 .row{

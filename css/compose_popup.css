@@ -1,3 +1,5 @@
+@import "tlp-colors.css";
+
 html{
 	width: 100%;
 	padding-left: -5%;
@@ -29,16 +31,16 @@ html{
 	cursor: pointer;
 }
 .tlp-red{
-	background-color: #E03C31;
+	background-color: var(--tlp-red);
 }
 .tlp-amber{
-	background-color: #F6BE00;
+	background-color: var(--tlp-amber);
 }
 .tlp-green{
-	background-color: #00B74F;
+	background-color: var(--tlp-green);
 }
 .tlp-white{
-	background-color: #5E7975;
+	background-color: var(--tlp-white);
 }
 .tlp-none{
 	background-color:white;
