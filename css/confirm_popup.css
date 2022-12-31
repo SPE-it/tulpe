@@ -1,5 +1,8 @@
+@import "tlp-colors.css";
+
 body{
-	background-color:#f0f0f0;
+	/* This looks ugly, but a darker background is necessary for the official TPL:CLEAR color */
+	background-color:#808080;
 	width:100%;
 	margin:0;
 	margin-top:7px;
@@ -50,17 +53,17 @@ hr{
 	margin-right:1.5px;
 }
 .tlp-red{
-	background-color: #E03C31;
+	background-color: var(--tlp-red);
 	margin-left:3px;
 }
 .tlp-amber{
-	background-color: #F6BE00;
+	background-color: var(--tlp-amber);
 }
 .tlp-green{
-	background-color: #00B74F;
+	background-color: var(--tlp-green);
 }
 .tlp-white{
-	background-color: #5E7975;
+	background-color: var(--tlp-white);
 }
 .tlp-none{
 	background-color:white;
@@ -76,16 +79,16 @@ hr{
 	font-weight: bold;
 }
 #legend-red{
-	color: #E03C31;
+	color: var(--tlp-red);
 }
 #legend-amber{
-	color: #F6BE00;
+	color: var(--tlp-amber);
 }
 #legend-green{
-	color: #00B74F;
+	color: var(--tlp-green);
 }
 #legend-white{
-	color: #5E7975;
+	color: var(--tlp-white);
 }
 .legend-text{
 	font-size: 13px;

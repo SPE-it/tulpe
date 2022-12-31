@@ -5,7 +5,7 @@ async function writeTLPMessage(tab, color){
 	var new_subject = getSubjectMessage(color, subject);
 	var tlp_message = await getTlpMessage(color);
 	console.log(tlp_message);
-	
+
 	if(details.isPlainText){
 		var key = "plainTextBody";
 		var message = details.plainTextBody;
@@ -89,6 +89,7 @@ function getBodyHtmlMessage(color, message,tlp_message){
 		var el = document.createElement("p");
 		el.textContent = tlp_message;
 		el.style["color"] = array_colors[color];
+		el.style["background"] = "#000000";
 		el.style["font-weight"] = "bold";
 		el.className = "tulpe-message";
 		
@@ -106,7 +107,7 @@ function getArraySubjects(){
 		"RED"   : "[TLP:RED]",
 		"AMBER" : "[TLP:AMBER]",
 		"GREEN" : "[TLP:GREEN]",
-		"WHITE" : "[TLP:WHITE]",
+		"CLEAR" : "[TLP:CLEAR]",
 	};
 	return array_subjects;
 }
@@ -125,18 +126,19 @@ function getStorageKey(color){
 		"RED"  : "tlp_red_message",
 		"AMBER": "tlp_amber_message",
 		"GREEN": "tlp_green_message",
-		"WHITE": "tlp_white_message"
+		"CLEAR": "tlp_white_message"
 	};
 	
 	return array_keys[color];
 }
 
-function getArrayHtmlColors(){
+function getArrayHtmlColors() {
+	/* Colors as defined in TLP 2.0 https://www.first.org/tlp/ */
 	var array_colors = {
-		"RED"  : "#E03C31",
-		"AMBER": "#F6BE00",
-		"GREEN": "#00B74F",
-		"WHITE": "#5E7975"
+		"RED"  : "#FF2B2B",
+		"AMBER": "#FFC000",
+		"GREEN": "#33FF00",
+		"CLEAR": "#FFFFFF"
 	};
 	
 	return array_colors;

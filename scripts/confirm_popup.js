@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
 	document.getElementById("badge-red").addEventListener('click',function(){sendMessage("RED")});
 	document.getElementById("badge-amber").addEventListener('click',function(){sendMessage("AMBER")});
 	document.getElementById("badge-green").addEventListener('click',function(){sendMessage("GREEN")});
-	document.getElementById("badge-white").addEventListener('click',function(){sendMessage("WHITE")});
+	document.getElementById("badge-white").addEventListener('click',function(){sendMessage("CLEAR")});
 	document.getElementById("badge-none").addEventListener('click',function(){sendMessage("NONE")});
 });
 

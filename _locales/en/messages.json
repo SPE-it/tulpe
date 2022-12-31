@@ -15,10 +15,10 @@
         "message": "TLP Message Configuration"
     },
     "options_strings_note": {
-        "message": "Note: all the messages will be preceded by \"Classification: TLP-COLOR - \""
+        "message": "Note: all the messages will be preceded by \"Classification: TLP:COLOR - \""
     },
     "classification_prefix": {
-        "message": "Classification: TLP-"
+        "message": "Classification: TLP:"
     },
     "confirm_title": {
         "message": "Missing TLP"

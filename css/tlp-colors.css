@@ -1,0 +1,8 @@
+/* Colors as defined in TLP 2.0 https://www.first.org/tlp/ */
+:root {
+    --tlp-red: #FF2B2B;
+    --tlp-amber: #FFC000;
+    --tlp-green: #33FF00;
+    --tlp-white: #FFFFFF;
+    --tlp-background: #000000;
+}
