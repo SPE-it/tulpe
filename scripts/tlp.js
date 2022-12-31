@@ -4,15 +4,16 @@ async function writeTLPMessage(tab, color){
 	var subject = details.subject;
 	var new_subject = getSubjectMessage(color, subject);
 	var tlp_message = await getTlpMessage(color);
-	// console.log(tlp_message);
+	console.log(tlp_message);
 
-	var key = "body";
-	var message = details.body;
-	var new_message = getBodyHtmlMessage(color, message, tlp_message);
 	if(details.isPlainText){
-		key = "plainTextBody";
-		message = details.plainTextBody;
-		new_message = getBodyTextMessage(color, message, tlp_message);
+		var key = "plainTextBody";
+		var message = details.plainTextBody;
+		var new_message = getBodyTextMessage(color, message, tlp_message);
+	} else {
+		var key = "body";
+		var message = details.body;
+		var new_message = getBodyHtmlMessage(color, message, tlp_message);
 	}
 	
 	browser.compose.setComposeDetails(tab.id, {subject: new_subject, [key]: new_message});
@@ -61,10 +62,11 @@ function getBodyTextMessage(color, message,tlp_message){
 		// +3 per rimuovere anche ;\n
 		message = message.substr(end+3);
 	}
-	var new_message = message;
 	if(color !== "NONE"){
 		// aggiungo il ; per capire dove finisce il messaggio
-		new_message = tlp_message+";\n"+message;
+		var new_message = tlp_message+";\n"+message;
+	} else {
+		var new_message = message;
 	}
 	return new_message;
 }
@@ -111,7 +113,7 @@ function getArraySubjects(){
 }
 async function getTlpMessage(color){
 	var storage_key = getStorageKey(color);
-	// console.log(storage_key);
+	console.log(storage_key);
 	var message = await browser.storage.local.get().then((res) => {
 		return res[storage_key];
 	});
