@@ -11,6 +11,12 @@
     "options_msg_saved": {
         "message": "Konfiguration gespeichert"
     },
+    "options_title":{
+        "message": "Verhalten"
+    },
+    "option_ask_on_send":{
+        "message": "Wenn keine Vertraulichkeitsstufe angegeben wurde, beim Senden erfragen"
+    },
     "options_strings_title": {
         "message": "TLP-Meldungen anpassen"
     },

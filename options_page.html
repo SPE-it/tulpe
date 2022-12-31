@@ -8,16 +8,18 @@
     </head>
     <body>
 		<div class="container">
+			<h3 data-message="options_title"></h3>
 			<div id="input-container">
 				<div class="input-group">
-					<input type="checkbox" id="input-ask-on-send" class="form-control">
-					<label for="input-ask-on-send" data-message="option_ask_on_send"></label>
+					<input type="checkbox" id="input-ask-on-send">
+					<label for="input-ask-on-send" data-message="option_ask_on_send">
+					</label>
 				</div>
 			</div>
-			<h3 data-message="options_strings_title"></h3>
-			<h4 data-message="options_strings_note"></h4>
 			<div id="input-container">
-				<div class="input-group">
+				<h3 data-message="options_strings_title"></h3>
+				<h4 data-message="options_strings_note"></h4>
+					<div class="input-group">
 					<span id="tlp-red" class="input-group-addon">
 					</span>
 					<input id="input-tlp-red" class="form-control" placeholder="TLP RED Message">
